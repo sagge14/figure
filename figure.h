@@ -74,4 +74,8 @@ public:
     void showInfo();
     bool empty();
     void setFigureType(Figure* myF);
+    ~someFigure(){
+        delete myFigure;
+        myFigure = nullptr;
+    }
 };
